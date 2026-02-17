@@ -6,107 +6,148 @@
   <title>Mridul Chopra | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-  <header id="home">
-    <div class="container header-flex">
-      <div class="header-text">
-        <h1>Hello, I'm <span>Mridul Chopra</span></h1>
-        <p class="typewriter-text"><span id="typing"></span><span class="cursor">|</span></p>
-        <p class="about-intro"></p>
-        <a href="#projects" class="btn">🌟 View Projects</a>
-        <a href="#about" class="btn">🎯 Read About-Me</a>
-  </header>
-  
-  <section id="about">
-    <div class="container about-flex">
-      <!-- Text Section -->
-      <div class="about-text">
-        <h2>About Me</h2>
+
+<header id="home">
+  <div class="container">
+    <h1>Hello, I'm <span>Mridul Chopra</span></h1>
+
+    <p class="typewriter-text">
+      <span id="typing"></span><span class="cursor">|</span>
+    </p>
+
+    <p class="about-intro">
+      I build systems that think, see, and solve.
+    </p>
+
+    <a href="#projects" class="btn">🚀 View Projects</a>
+    <a href="#about" class="btn secondary">🧠 About Me</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container about-flex">
+
+    <div class="about-text">
+      <h2>🧠 About Me</h2>
+      <p>
+        I'm a second-year <b>Computer Science</b> student at the <b>University of Adelaide</b>,
+        originally from India.
+        I moved to Australia to pursue my long-standing passion for building systems
+        and solving hard problems.
+        <br><br>
+        I enjoy working close to the fundamentals — algorithms, data structures,
+        and systems — and applying them to real projects in
+        <b>machine learning</b>, <b>computer vision</b>, and <b>game logic</b>.
+        <br><br>
+        Outside uni, I actively compete in <b>ICPC-style programming contests</b>,
+        build challenging side projects, and constantly sharpen my problem-solving skills.
+      </p>
+
+      <h2>⚙️ Core Technologies</h2>
+      <div class="tech-stack">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"><span>C++</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><span>Java</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><span>Git</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"><span>Linux</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"><span>Swift</span></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><span>SQL</span></div>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="Resources/My_pic.jpeg" class="profile-pic-large" alt="Mridul Chopra">
+
+      <div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/mridul-chopra23/" target="_blank" class="contact-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+        </a>
+        <a href="mailto:mridulchopra23@gmail.com" class="contact-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+        </a>
+        <a href="https://github.com/Mridul-Learing-Unisa" target="_blank" class="contact-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>🚀 Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h1>🖐️ On-Camera Whiteboard</h1>
+        <p class="tech-stack">Python · OpenCV · MediaPipe · NumPy</p>
         <p>
-          I'm a second-year IT student at <b>UniSA</b>, I moved from India to Adelaide to pursue my childhood passion <b>COMPUTERS</b>.
-          I like learning and building but love solving problems and bringing ideas to life.
-          Outside of Uni, I'm currently exploring <b>Machine Learning</b> & <b>iOS App Development</b>, also practicing <b>DSA on Leetcode</b>.
-          <br><br>I like challenges, and am ready to grow!
+          A real-time computer vision system that digitizes physical whiteboard drawings
+          using hand gesture recognition.
         </p>
-  
-        <h2>Technologies Known:</h2>
-        <div class="tech-stack">
-          <!-- Row 1 -->
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><span>Python</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/><span>C/C++</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/><span>Java</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"/><span>Swift</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"/><span>SwiftUI</span></div>
-  
-          <!-- Row 2 -->
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><span>HTML</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><span>CSS</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><span>JavaScript</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"/><span>MS SQL</span></div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/><span>Linux</span></div>
-        </div>
+        <ul>
+          <li>✋ Gesture-based draw, erase & clear</li>
+          <li>🎯 MediaPipe hand tracking</li>
+          <li>⚡ Real-time processing</li>
+          <li>🎨 Dynamic stroke & colour control</li>
+        </ul>
       </div>
-  
-      <!-- Image + Socials -->
-      <div class="about-image">
-        <img src="Resources/My_pic.jpeg" alt="Mridul Chopra" class="profile-pic-large" />
-        <div class="contact-buttons icon-only">
-          <a href="https://www.linkedin.com/in/mridul-chopra23/" target="_blank" class="contact-icon" aria-label="LinkedIn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-          </a>
-          <a href="mailto:mridulchopra23@gmail.com" class="contact-icon" aria-label="Email">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
-          </a>
-          <a href="https://github.com/Mridul-Learing-Unisa" target="_blank" class="contact-icon" aria-label="GitHub">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-          </a>
-        </div>
+
+      <div class="project-card">
+        <h1>♟️ Chess Puzzle Solver</h1>
+        <p class="tech-stack">Python · Minimax · Alpha-Beta</p>
+        <p>
+          A chess engine that solves tactical puzzles using Minimax with
+          Alpha-Beta pruning and board evaluation.
+        </p>
+        <ul>
+          <li>🧠 Search optimisation & caching</li>
+          <li>📉 30% runtime improvement</li>
+          <li>🎯 75+ puzzles solved</li>
+        </ul>
       </div>
+
+      <div class="project-card">
+        <h1>🌍 CO₂ Emission Predictor</h1>
+        <p class="tech-stack">Python · NumPy · Pandas</p>
+        <p>
+          Linear regression model built from scratch to predict CO₂ emissions
+          using real-world datasets.
+        </p>
+        <ul>
+          <li>📊 Custom gradient descent</li>
+          <li>📈 MAE ≈ 5</li>
+          <li>🖥️ CLI-based interface</li>
+        </ul>
+      </div>
+
     </div>
-  </section>
-  
+  </div>
+</section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="Resources/wordle-logo.png" alt="">
-          <h1 style=" font-size: 40px;">Wordle clone</h1>
+<section>
+  <div class="container">
+    <h2>🏆 Competitive Programming</h2>
+    <p>
+      I actively compete in ICPC-style contests and university leagues,
+      solving algorithm-heavy problems under time pressure.
+    </p>
+    <ul>
+      <li>🥇 Top 10 / 40 teams – University League</li>
+      <li>⚡ RSP × ACPC Contest – 10th place</li>
+      <li>📚 Strong focus on DSA, graphs & DP</li>
+    </ul>
+  </div>
+</section>
 
-          <p class="tech-stack">Technologies: Swift, SwiftUI, Xcode</p>
-          <p>A Wordle game clone IOS mobile application <H2>Features:</H2></p>
-            <ul>🎮 Hard Mode </ul>
-            <ul> 🆘 Help Screen  </ul>
-            <ul> 🌗 Light and Dark Mode  </ul>
-            <ul> 📤 Share Results  </ul>
-            <ul> 📊 View Statistics</ul>
-          <a target="_blank" href="https://github.com/Mridul-Learing-Unisa/Wordle-clone" class="btn">View Projects on Github</a>
-        </div>
-        <div class="project-card">
-          <img style="border-radius: 40px; width:140px;" src="Resources/CO2-cover.jpg" alt="">
-          <h1 style=" font-size: 38px;">CO₂ Emission Predictor</h1>
+<footer>
+  <p>© 2025 Mridul Chopra. Built with curiosity & caffeine ☕</p>
+</footer>
 
-          <p class="tech-stack">Technologies: Python, Jupyter Notebook </p>
-          <p>A Linear regression Machine Learning Model <H2>Features:</H2></p>
-              <ul>🔢 Model: Linear Regression (ŷ = w·x + b)</ul>
-              <ul>📊 Cost function visualization & Custom Gradient Descent</ul>
-              <ul>🚧 Future: Multivariate support (Engine Size, Vehicle Class)</ul>
-              <ul>📈 Normalized real-world dataset from Kaggle</ul>
-              <ul> 🖥️ Interface: CLI to enter fuel consumption and get predictions</ul>
-          <a target="_blank" href="https://github.com/Mridul-Learing-Unisa/CO2-Emission-Prediction" class="btn">View Projects on Github</a>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mridul Chopra. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
-

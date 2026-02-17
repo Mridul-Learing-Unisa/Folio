@@ -1,36 +1,33 @@
 const phrases = [
-    "A passionate Software Developer 🚀",
-    "An AI/ML Enthusiast 🤖"
-  ];
-  
-  let currentPhrase = 0;
-  let currentChar = 0;
-  const typingSpeed = 100;
-  const delayBetweenPhrases = 1000;
-  const typingTarget = document.getElementById("typing");
-  
-  function type() {
-    if (currentChar <= phrases[currentPhrase].length) {
-      typingTarget.textContent = phrases[currentPhrase].substring(0, currentChar);
-      currentChar++;
-      setTimeout(type, typingSpeed);
-    } else {
-      setTimeout(erase, delayBetweenPhrases);
-    }
+  "I solve hard problems ⚙️",
+  "Competitive Programmer ♟️",
+  "Machine Learning & CV Builder 🤖",
+  "Software Engineer in the making 🚀"
+];
+
+let currentPhrase = 0;
+let currentChar = 0;
+const typingTarget = document.getElementById("typing");
+
+function type() {
+  if (currentChar <= phrases[currentPhrase].length) {
+    typingTarget.textContent =
+      phrases[currentPhrase].substring(0, currentChar++);
+    setTimeout(type, 100);
+  } else {
+    setTimeout(erase, 1200);
   }
-  
-  function erase() {
-    if (currentChar > 0) {
-      typingTarget.textContent = phrases[currentPhrase].substring(0, currentChar - 1);
-      currentChar--;
-      setTimeout(erase, typingSpeed / 2);
-    } else {
-      currentPhrase = (currentPhrase + 1) % phrases.length;
-      setTimeout(type, 300);
-    }
+}
+
+function erase() {
+  if (currentChar > 0) {
+    typingTarget.textContent =
+      phrases[currentPhrase].substring(0, --currentChar);
+    setTimeout(erase, 60);
+  } else {
+    currentPhrase = (currentPhrase + 1) % phrases.length;
+    setTimeout(type, 300);
   }
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    type();
-  });
-  
+}
+
+document.addEventListener("DOMContentLoaded", type);
